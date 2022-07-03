@@ -4,6 +4,7 @@
 Icloud-download Judicial Module
 """
 import errno
+import sys
 import time
 from dataclasses import dataclass
 from dataclasses import field
@@ -114,11 +115,14 @@ class Documents:
 
 
 d = Documents(dry=True)
+
+documents = Documents()
 judicial = Documents(path='Judicial')
 julia = Documents(path='Julia')
 backups = Documents(path='Backups iPhone')
 personal = Documents(path='Personales')
-viejos = Documents(path='Personales Viejos')
+viejos = Documents(path='Personales - Viejos')
+salud = Documents(path='Salud')
 test = Documents(path='Judicial/Justicia Gratuita - Viejos', tmp=True)
 
 
