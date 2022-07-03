@@ -116,12 +116,14 @@ class Documents:
 d = Documents(dry=True)
 judicial = Documents(path='Judicial')
 julia = Documents(path='Julia')
+backups = Documents(path='Backups iPhone')
+personal = Documents(path='Personales')
+viejos = Documents(path='Personales Viejos')
 test = Documents(path='Judicial/Justicia Gratuita - Viejos', tmp=True)
 
-# a, m, c, B
-# st_atime, st_mtime, st_ctime, st_birthtime
-# print(documents.src.dir())
-# print(documents)
-# documents.file()
-# print(documents.src.data)
-judicial.download()
+
+# judicial.download()
+# julia.download()
+backups.download()
+# personal.download()
+# viejos.download()
