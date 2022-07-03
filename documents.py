@@ -4,7 +4,6 @@
 Icloud-download Judicial Module
 """
 import errno
-import sys
 import time
 from dataclasses import dataclass
 from dataclasses import field
