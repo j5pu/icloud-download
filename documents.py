@@ -4,7 +4,6 @@
 Icloud-download Judicial Module
 """
 import errno
-import sys
 import time
 from dataclasses import dataclass
 from dataclasses import field
@@ -125,3 +124,4 @@ test = Documents(path='Judicial/Justicia Gratuita - Viejos', tmp=True)
 # print(documents)
 # documents.file()
 # print(documents.src.data)
+judicial.download()
