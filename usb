@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+rclone copy /Users/j5pu/CloudDocs/Compressed/ /Volumes/USB-2TB/iCloud/Compressed/ \
+  --progress --progress-terminal-title -v --exclude ".*" --multi-thread-streams=4
