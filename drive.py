@@ -24,7 +24,7 @@ from api import *
 
 DEST = {True: "/tmp", False: "/Volumes/USB-2TB/iCloud"}
 Node = NamedTuple("Node", dest=Path, src=DriveNode)
-ASYNC: bool = True
+ASYNC: bool = False
 DRY: bool = False
 
 
