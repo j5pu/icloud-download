@@ -4,7 +4,6 @@
 Icloud-download Judicial Module
 """
 import asyncio
-import random
 from asyncio import to_thread
 from typing import Union
 
@@ -31,7 +30,7 @@ DRY: bool = False
 @dataclass
 class Drive:
     path: InitVar[Union[Path, str]] = None
-    """Path relative to Documents (default: None to download all in Drive)"""
+    """Path relative to iCloud Drive com~apple~CloudDocs (default: None to download all in Drive)"""
     dry: bool = False
     tmp: bool = False
     dest: Path = field(default=None, init=False)
