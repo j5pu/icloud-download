@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd "/Users/j5pu/Library/Mobile Documents/com~apple~CloudDocs/Compressed"
+cd "/Users/j5pu/Library/Mobile Documents/com~apple~CloudDocs/Compressed" || exit
 
 while read -r file; do
   downloaded="$(dirname "${file}")/$(basename "${file}" .icloud | sed 's/^\.//g')"
